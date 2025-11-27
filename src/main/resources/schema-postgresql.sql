@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS IndicacaoLivros(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    livro VARCHAR(50) NOT NULL,
+    autor VARCHAR(50) NOT NULL,
+    categoria VARCHAR(20) NOT NULL
+);

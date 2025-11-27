@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <title>Indicação Recebida - Biblioteca Online</title>
+    <link rel="stylesheet" th:href="@{/css/indicacao.css}">
+</head>
+
+<body>
+    <header>
+        <h1>🎉 Indicação Recebida!</h1>
+        <p>Obrigado por compartilhar sua recomendação</p>
+    </header>
+    <section>
+
+        <div class="success-container">
+            <div class="success-icon">✅</div>
+            <h1>Indicação Recebida com Sucesso!</h1>
+            <p>Obrigado por sua indicação de livro. Sua recomendação foi salva em nossa base de dados.</p>
+
+            <div class="success-links">
+                <a th:href="@{/formIndicacao}">➕ Fazer outra indicação</a>
+                <a th:href="@{/listar}">📋 Ver todas as indicações</a>
+                <a th:href="@{/}">🏠 Página inicial</a>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <div>
+                <h4><a th:href="@{/}">Biblioteca Online</a></h4>
+                <p>Seu mundo de leituras desde 2025</p>
+            </div>
+
+            <div>
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a th:href="@{/destaques}">Destaques</a></li>
+                    <li><a th:href="@{/bestSellers}">Best Sellers</a></li>
+                    <li><a th:href="@{formIndicacao}">Indicações</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Atendimento</h4>
+                <p>📞 (13) 9999-9999</p>
+                <p>✉️ contato@bibliotecaonline.com</p>
+                <p>🕒 Seg à Sex: 9h às 18h</p>
+            </div>
+        </div>
+
+        <div>
+            <p>&copy; 2025 Biblioteca Online. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

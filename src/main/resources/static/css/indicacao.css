@@ -1,0 +1,284 @@
+/* CSS básico para o index, construí com auxílio de IA */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2c3e50;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: rgba(202, 194, 194, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #667eea;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #667eea, #282f36);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #282f36;
+    margin-bottom: 2rem;
+}
+
+/* ===== ESTILOS PARA FORMULÁRIOS ===== */
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.form-container h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+
+/* ===== ESTILOS PARA PÁGINA DE SUCESSO ===== */
+.success-container {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.success-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.success-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #27ae60;
+}
+
+.success-container p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+}
+
+.success-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.success-links a {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+
+
+/* ===== ESTILOS PARA LISTAGEM ===== */
+.list-container {
+    background: rgba(255, 255, 255, 0.95);
+    margin: 2rem auto;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.list-header h1 {
+    font-size: 2.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.header-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.header-actions a {
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 2rem;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+footer h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer h4 {
+    color: #bdc3c7;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #ecf0f1;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #667eea;
+}
+
+footer > div:last-child {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #34495e;
+    color: #95a5a6;
+}
+

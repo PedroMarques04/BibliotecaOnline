@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* css utilizado para outras paginas, com coisas diferentes do index
+construí uma decoração simples com auxílio de IA e alterei umas coisas*/
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #667eea, #282f36);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255,0.2);
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+nav a:hover {
+    background: rgba(255,255,255,0.3);
+}
+
+/* Lista de livros */
+.lista-livros {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.lista-livros h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #2c3e50;
+    font-size: 2rem;
+}
+
+.livros-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.livro-card {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Capa do livro */
+.capa-livro {
+    flex: 0 0 200px;
+    position: relative;
+}
+
+.capa-imagem {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border: 2px solid #ddd;
+}
+
+.capa-placeholder {
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.texto-placeholder {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+/* Informações do livro */
+.info-livro {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-livro h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.info-livro p {
+    margin: 0.3rem 0;
+    color: #555;
+}
+
+.preco {
+    font-size: 1.5rem ;
+    font-weight: bold;
+    color: #2c3e50 ;
+}
+
+.autor {
+    font-style: italic;
+    color: #666 ;
+    font-size: 1.1rem ;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 3rem 2rem 1rem;
+    margin-top: 3rem;
+}
+
+footer > div:first-child {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 2rem;
+}
+
+footer h3 {
+    color: #667eea;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+footer h4 {
+    color: #bdc3c7;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer p {
+    color: #ecf0f1;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #bdc3c7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #667eea;
+}
+
+footer > div:last-child {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid #34495e;
+    color: #95a5a6;
+}
+
+
+
+header, #categorias, footer {
+    animation: fadeInUp 0.8s ease-out;
+}
