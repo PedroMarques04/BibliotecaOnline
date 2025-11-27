@@ -2,18 +2,11 @@ server:
     port: 8080
 
 spring:
-    datasource:
-        url: jdbc:postgresql://dpg-d4fo0padbo4c73c5mrb0-a.oregon-postgres.render.com:5432/dbbiblioteca_ue4h
-        username: dbbiblioteca_ue4h_user
-        password: ahlxyhcBQ8lo3Utp2zAKKzpWfHcilq2b
-        driver-class-name: org.postgresql.Driver
-        
     sql:
         init:
             schema-locations: classpath:schema-postgresql.sql
             mode: always
             platform: postgres
-    
     jpa:
         hibernate:
             ddl-auto: validate
